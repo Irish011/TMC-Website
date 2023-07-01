@@ -1,0 +1,656 @@
+/* Navbar */
+
+#navbar-small{
+    flex-wrap: nowrap ;
+    position: fixed;
+    top: 0;
+    height: 6.25rem;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    text-transform: uppercase;
+}
+
+.app-navbar{
+    margin-bottom: 8.5rem;
+}
+
+.nav-title{
+    color: black;
+}
+
+.site-navbar-small{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background:rgb(22, 22, 22);
+    min-height: 758vh;
+    width: 19.8rem;
+}
+
+.navbar-content{
+    text-align: justify;
+    width: 20%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.navbar-title{
+    color: #90720f;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    padding: 3px;
+    width: max-content;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.vl{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 25px;
+    border-top: 2px solid #90720f;
+    width: 260px;
+}
+
+.links, .links2, #basic-nav-dropdown{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #90720f;
+}
+
+.links:hover, .links2:hover, #basic-nav-dropdown:hover{
+    color: white;
+}
+
+.navbar-big{
+    position: fixed;
+    background-color: rgb(22, 22, 22);
+    text-transform: uppercase;
+    top: 0;
+    /* animation: 7s ease-in 5s 1 slideInFromLeft; */
+    transition: all ease-in-out 1s !important;
+    height: 19vh;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-big-onscroll{
+    position:fixed ;
+    top:0;
+    opacity: 0.95;
+}
+
+
+.dropdown-divider{
+    border-top: 8rem solid #715807;
+    width: 0.15rem;
+    position: absolute;
+    margin-left: 13.9vw;
+}
+
+.logoheader{
+    width: 100%;
+    margin-top: 0.3rem;
+    height: 20vh !important;
+}
+.navbar-content-big{
+    /* position: absolute;
+    right:0; */
+    text-align: justify;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.links2{
+    margin: 14px;
+}
+
+/* SlideImg-home */
+
+.carousel-caption{
+    top:35%;
+}
+
+.carousel-item-img{
+    opacity: 0.9;
+    height:82vh !important;
+    display: block;
+    width: 100%;
+}
+
+.carousel-slider-text{
+    font-size: 3rem;
+    font-weight: 500;
+    color: black;
+}   
+
+.carousel-slider-caption{
+    border-radius: 20px;
+    /* height: 50%; */
+    background-color: rgba(255, 255, 255, 0.405);
+}
+
+/* Home */
+
+.home-about-title, .home-about-title2{
+    font-size: 95px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 4.5vw auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+    letter-spacing: 3vw;
+    margin-left: 6%;
+    color: black;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.home-about-title2{
+    opacity: 0.3;
+    margin-top: -20vh;
+    margin-left: 1.5%;
+    /* color: #90720f; */
+}
+
+.home-about-text{
+    font-size: 1.8rem;
+    padding: 5rem;
+    font-family: auto;
+    text-align: justify;
+    color: #90720f;
+    background-color: rgb(22, 22, 22);
+    /* border: 1px black solid; */
+    border-radius: 1.5vh; 
+}
+
+.read-more-btn{
+    background-color: white;
+    padding: 1.5vh;
+    color: black;
+    text-transform: uppercase;
+    transition: 1s ease-in-out;
+    border: 0.2vh solid lightgrey;
+    box-shadow: 0.2vh 0.2vh lightgrey;
+    float: left;
+    margin: -12vh 7vh 0 15vh;
+}
+
+.read-more-btn:hover {
+    background-color: black;
+    color: #90720f;
+}
+
+.home-projects-title, .home-projects-title2{
+    font-size: 5rem;
+    font-weight: 800;
+    margin: 4.5vw auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1vw;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    text-transform: uppercase;
+
+}
+.home-projects-title2{
+    opacity: 0.3;
+    margin-top: -25vh;
+    margin-left: 1%;
+}
+
+.home-projects-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home-projects-text{
+    font-family: "Raleway", Sans-serif;
+    color: #fff;
+    font-size: 2rem;
+    width: 100%;height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-projects-container{
+    position: relative;
+    transform: scale(0.95);
+    transition: transform 0.7s ease-out;
+}
+
+.home-projects-container:hover{
+    transform: scale(1);
+}
+
+/* About */
+
+.about-header{
+    display: none;
+}
+
+.about-title{
+    padding: 1vh 2vh 1vh 0vh;
+    text-align: start;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.card{
+    align-items: baseline;
+}
+.cardBody > b{
+    font-size: 1.3rem;
+}
+.cardBody{
+    font-size: 1.2rem;
+}
+
+.about-youtube{
+    display: flex;
+    justify-content:space-between;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    text-align: start;
+}
+
+.about-video{
+    margin-top: 5%;
+    width: 60%;
+}
+
+.about-timestamp{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+    margin-right: 2rem;
+}
+
+.about-text{
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.founder{
+    width:20%;
+    height:auto;
+    max-height: 60%;
+}
+
+.founder-info{
+    margin-top: 3vh;
+    font-size: 1.4rem; 
+}
+
+/* CarouselProjects */
+
+.carouselContainer{
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+}
+
+.carouselSlider{
+    height: 100%;
+    display: flex;
+    transition: transform 1.5s ease-out;
+}
+
+.carousel-leftbtn{
+    position: absolute;
+    top: 50%;
+    transform: translate(90%, -50%);
+    right: 32px;
+    font-size: 30px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.carousel-rightbtn{
+    position: absolute;
+    top: 50%;
+    transform: translate(-90%, -50%);
+    left: 32px;
+    font-size: 30px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.carouselText{
+    position: relative;
+    font-size: 1.5rem;
+    color: #000;
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: rgba(167, 165, 165, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+}
+
+/*Comleted Projects*/
+
+.projectsContainer{
+    height: 14rem;
+    margin: 5rem auto;
+}
+
+.completedTitle{
+    display: none;
+}
+
+.completedProjects{
+    margin: -2.0rem 1rem 0 1rem;
+}
+
+/* Career */
+
+.career-howdidwe-text{
+    margin-top:50px;
+}
+
+.career-header{
+    font-weight: 700;
+}
+
+/* Footer */
+
+.footer-container{
+    position:relative;
+    margin-top: 1.5%;
+}
+
+.footer-copyright-text{
+    font-size:1.2rem;
+    color: lightgray;
+    text-align: center;
+}
+
+.footer-social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icon{
+    margin-right: 0.625rem;
+    width: auto;
+}
+
+.footer-icon > svg {
+    cursor: pointer;
+}
+
+.footer-logo{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: lightgray;
+    text-align: center;
+}
+
+.contactS{
+    display: flex;
+    background-color: grey;
+    height:100vh;
+    margin: 8rem 1rem 1rem 1rem;
+}
+
+.contact2, .contact3, .contact4{
+    /* display: flex; */
+    background-color: black;
+    width: 33.34%;
+    height:50vh;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(40%);
+    }
+    100% {
+        transform: translateZ(10%);
+    }
+}
+
+@keyframes slideRight{
+    from{
+        margin-left:-100%;
+    }
+    to{
+        margin-left:0%;
+    }
+}
+
+/* horiizontal mode */
+@media (min-width: 992px) {
+    .container{
+        max-width:100%;
+    }
+
+    .logoheader{
+        height: 10rem;
+        width: auto;
+    }
+
+}
+
+/* Phone */
+@media only screen and (max-width: 992px){
+    .app-navbar{
+        margin-bottom: 6.25rem;
+    }
+
+    .container{
+        max-width: 100%;
+    }
+
+    .footer-logo{
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: lightgray;
+        text-align: center;
+    }
+
+    .links, .links2, #basic-nav-dropdown{
+        font-size: 22px;
+        margin-bottom: 10px;
+        width: 170px;
+    }    
+
+    .carousel-item-img{
+        height: 25vh !important;
+        display: block;
+        width: 100%;
+    }
+
+    .carousel-slider-text{
+        font-size: 1.5rem;
+        font-weight: 400;
+        /* margin: 0%; */
+    }
+
+    .home-about-title2{
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: 20px;
+        margin-left: 4%;
+        opacity: 0.3;
+        margin-bottom: 0px;
+        margin-top:-72px;
+    }
+
+    .home-about-title{
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: 20px;
+        margin-left: 6%;
+        margin-bottom: 0px;
+        opacity: 0.85;
+    }
+
+    .home-about-text{
+        margin: -20px 0px 10px 0px;
+        padding: 25px;
+        font-size: 1.2rem;
+        font-family: auto;
+        text-align: left;
+    }
+
+    .home-projects-text{
+        font-size: 2.5rem;
+    }
+
+    .home-projects-title{
+        font-size:3rem;
+    }
+
+    .home-projects-title2{
+        font-size:3rem;
+        margin-top: -10.9vh;
+        margin-left: 2.5%;
+    }
+
+    .read-more-btn{
+        margin: 20px 0px 0px 1px;
+        font-size: 10px;
+    }
+
+    .logobrand{
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+
+    .logoheader{
+        height: 7rem !important;
+        width: auto;
+    }
+
+    .about-header, .about-header2{
+        display: block;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 12.5vw;
+        margin-top: 1vh;
+        font-weight: 700;
+        letter-spacing: 1rem;
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+    .about-header2{
+        opacity: 0.3;
+        margin-top: -1.43em;
+        margin-left:3%;
+    }
+
+    .about-title{
+        margin-top: 1vh;
+        font-weight: 400;
+        animation: 2s ease-out 0s 1 slideRight;
+    }
+
+    .about-text{
+        font-size: 1.4rem;
+        font-weight: 200;
+        text-align: justify;
+    }
+
+    .about-youtube{
+        display: contents;
+    }
+
+    .about-timestamp{
+        row-gap: 0.5rem;
+        width: 100%;
+        
+    }
+
+    iframe{
+        margin-top: 2vh;
+        max-width: 100%;
+        height: 32vh;
+    }
+
+    .founder{
+        height: 11rem;
+        width: 9rem;
+    }
+
+    .founder-info{
+        margin-top: 1rem;
+        font-size: 17px;
+    }
+
+    .career{
+        font-size: 16px;
+        margin: 0.1rem;
+    }
+
+    .career-header, .career-header2{
+        text-transform: uppercase;
+        letter-spacing: 0.24rem;
+        font-size: 2.8rem;
+        margin-top: 15vh;
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+
+    .career-header2{
+        opacity: 0.3;
+        margin-top: -8.6vh;
+        margin-left: 3%;
+    }
+
+    .career-howdidwe-text{
+        text-align: justify;
+        margin-top: 1rem;
+        font-weight: 200;
+        font-size: 1.3rem;
+    }
+
+    .career-resume{
+        font-size: 1.5rem;
+        font-weight: 550;
+        margin-left: 1rem;
+        margin-top: 2rem;
+        text-align: left;
+        animation: 2s ease-out 0s 1 slideRight;
+    }
+
+    .career-email{
+        text-align:start;
+        font-size: 1.4rem;
+        margin: 0.5rem 0rem 0rem 1rem;
+    }
+
+    .completedTitle, .completedTitle2{
+        display: block;
+        text-transform: uppercase;
+        text-align:center;
+        font-size: 11vw;
+        margin-top: 16vh;
+        font-weight: 700;
+        letter-spacing: 0.5rem;
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+
+    .completedTitle2{
+        opacity: 0.3;
+        margin-top: -16.8vh;
+        margin-left:3%;
+    }
+
+    .completedProjects{
+        margin: -2rem 0 0 0;
+    }
+    
+}
