@@ -9,7 +9,7 @@ import AboutUs from './pages/about/index';
 import Career from './pages/career/index';
 import Completed from './pages/projects/Completed';
 import Contact from './pages/contact/index';
-// import Projects from './pages/home/projects';
+import Animations from './pages/testimonials/Animations';
 import Header from './components/header';
 // import ImgSlider from './components/img-slider';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -29,7 +29,7 @@ function App() {
             <Route path='/career' element={<Career/>}/>
             <Route path='/completed' element={<Completed/>}/>
             <Route path='/contact' element={<Contact/>}/>
-            <Route path='/project' element={<Header/>}/>
+            <Route path='/project' element={<Animations/>}/>
           </Routes>
         </BrowserRouter>
       </div>

@@ -1,3 +1,37 @@
+/*  */
+.animations {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background: black;
+  }
+  .main {
+    margin: 1000px auto;
+  }
+  
+  @keyframes play {
+      100% { background: red; }
+  }
+  
+  .animation {
+    animation: play 2.8s steps(15);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .animations:after {
+    position: fixed;
+    content: 'Keep scrolling!';
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+    transition: opacity .4s;
+  }
+  .animations:not(.animation):after {
+    opacity: 1;
+  }
+/*  */
 /* Navbar */
 
 #navbar-small{
@@ -230,7 +264,6 @@
     transform: scale(1);
 }
 
-
 /* About */
 
 .about-header{
@@ -298,9 +331,9 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
 }
 
 .carouselSlider{
@@ -334,12 +367,12 @@
     font-size: 1.5rem;
     color: #000;
     width: 100%;
-    padding: 0.4rem;
+    padding: 0.6rem;
     margin-bottom: 1rem;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    background-color: rgba(167, 165, 165, 0.3);
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(203, 203, 203, 0.092);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
 }
 
 /*Comleted Projects*/
@@ -573,7 +606,6 @@
     .about-timestamp{
         row-gap: 0.5rem;
         width: 100%;
-        
     }
 
     iframe{

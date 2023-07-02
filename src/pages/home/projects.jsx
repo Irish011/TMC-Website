@@ -1,6 +1,5 @@
 import React from 'react';
-import img1 from '../../images/home-slider-1.jpg';
-
+import img1 from '../../images/Sahjanand Heliconia/10.jpg';
 function Projects(){
 
     return(
