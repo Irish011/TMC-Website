@@ -1,8 +1,8 @@
 import React from 'react';
 import img1 from '../../images/home-slider-1.jpg';
 
-
 function Projects(){
+
     return(
         <div>
 
