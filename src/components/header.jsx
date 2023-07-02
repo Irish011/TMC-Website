@@ -21,8 +21,7 @@ function SiteNavbar() {
                                 <Nav.Link href="/" className="links">Home</Nav.Link>
                                 <Nav.Link href="/aboutUs" className="links">About</Nav.Link>
                                 <NavDropdown title="Project" id="basic-nav-dropdown" className='navbar-primary-color'>
-                                    <NavDropdown.Item href="/completed">Residential</NavDropdown.Item>
-                                    <NavDropdown.Item href="/commercial">Commercial</NavDropdown.Item>
+                                    <NavDropdown.Item href="/completed">Completed</NavDropdown.Item>
                                     <NavDropdown.Item href="/upcoming">Upcoming</NavDropdown.Item>
                                 </NavDropdown>
                                 <Nav.Link href="/contact" className="links">Testimonial</Nav.Link>
@@ -42,8 +41,7 @@ function SiteNavbar() {
                             <Nav.Link href="/" className="links2">Home</Nav.Link>
                             <Nav.Link href="/aboutUs" className="links2">About</Nav.Link>
                             <NavDropdown title="Project" id="basic-nav-dropdown" className="links2">
-                                <NavDropdown.Item href="/completed">Residential</NavDropdown.Item>
-                                <NavDropdown.Item href="/commercial">Commercial</NavDropdown.Item>
+                                <NavDropdown.Item href="/completed">Completed</NavDropdown.Item>
                                 <NavDropdown.Item href="/upcoming">Upcoming</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link href="/testimonial" className="links2">Testimonial</Nav.Link>

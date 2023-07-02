@@ -1,4 +1,7 @@
-/*  */
+/*  
+
+*/
+
 .animations {
     width: 200px;
     height: 200px;
@@ -133,6 +136,18 @@
     text-align: justify;
     justify-content: space-between;
     font-size: 20px;
+}
+
+.dropdown-menu{
+    background-color: rgb(22, 22, 22);
+    border-top: 1px solid #90720f;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.dropdown-item{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.15rem;
+    color: #90720f;
 }
 
 .links2{
@@ -495,6 +510,12 @@
         color: lightgray;
         text-align: center;
     }
+
+    .dropdown-menu{
+        background-color: rgb(26, 26, 26);
+        border-top: 1px solid #90720f;
+    }
+
 
     .links, .links2, #basic-nav-dropdown{
         font-size: 22px;
