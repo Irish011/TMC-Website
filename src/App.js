@@ -19,7 +19,7 @@ function App() {
     // </div>
     <div className="App">
       <SiteNavbar/>
-        {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
+        <HashRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route path='/' element={<HomePage/>}/>
             <Route path='/aboutUs' element={<AboutUs/>}/>
@@ -27,7 +27,7 @@ function App() {
             <Route path='/completed' element={<Completed/>}/>
             <Route path='/contact' element={<Contact/>}/>
           </Routes>
-        {/* </BrowserRouter> */}
+        </HashRouter>
       <Footer/>
     </div>
   );
