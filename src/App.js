@@ -10,7 +10,7 @@ import AboutUs from './pages/about/index';
 import Career from './pages/career/index';
 import Completed from './pages/projects/Completed';
 import Contact from './pages/contact/index';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
