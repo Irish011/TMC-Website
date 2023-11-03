@@ -1,12 +1,17 @@
 import React, {useState, useEffect, useRef, useCallback} from "react";
+// import Popup from "./Popup";
+// import About from '../home/about';
 
 const Carousel = ({slides}) => {
+    // const [buttonPopup, setButtonPopup] = useState(false);
+
     const timerRef = useRef(null);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [transitionEnabled, setTransitionEnabled] = useState(false);
+    // const [transitionEnabled, setTransitionEnabled] = useState(false);
 
 
     const sliderContainerStyle = {
+        cursor: 'pointer',
         width: `${slides.length * 100}%`,
         transform: `translateX(-${(currentIndex * 100) / slides.length}%)`,
     };
@@ -18,7 +23,7 @@ const Carousel = ({slides}) => {
     };
 
     const goToNext = useCallback(() => {
-        setTransitionEnabled(true);
+        // setTransitionEnabled(true);
         const isLastSlide = currentIndex === slides.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
@@ -73,6 +78,8 @@ const Carousel = ({slides}) => {
             <div className='carousel-leftbtn' onClick={goToNext}> &#9654; </div>
             <div className='carousel-rightbtn' onClick={goToPrev}> &#9664;</div>
             <div className="carouselSlider" style={sliderContainerStyle}>{renderSlide()}</div>
+
+            {/* <Popup trigger={buttonPopup} setTrigger={setButtonPopup}><div className="popup-content"><About/></div></Popup> */}
         </div>
     )
 };

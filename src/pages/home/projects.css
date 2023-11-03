@@ -1,0 +1,76 @@
+.projectsHomeContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-projects-title{
+    color: #715807;
+    letter-spacing: 0.5rem;
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin: 3.5rem 0 2.5rem 0;
+    font-family: 'Gasket';
+    align-self: center;
+    text-transform: uppercase;
+}
+
+.home-photo-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-projects-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home-projects-text{
+    font-family: 'Lato  ';
+    color: #fff;
+    font-size: 2rem;
+    width: 100%;height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-projects-container{
+    position: relative;
+    transform: scale(0.95);
+    transition: transform 0.7s ease-out;
+    width: 50%;
+}
+
+.home-projects-container:hover{
+    transform: scale(0.99);
+}
+
+@media only screen and (max-width: 992px){
+
+    .home-projects-container{
+        width: 100%;
+        transform: scale(0.9);
+    }
+
+    .home-projects-container:hover{
+        transform: scale(0.95)
+    }
+
+    .home-projects-title{
+        font-size:3rem;
+        letter-spacing: 0.3rem;
+        margin-bottom: 2rem;
+    }
+
+
+}

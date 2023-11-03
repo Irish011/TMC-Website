@@ -1,0 +1,15 @@
+.career{
+    font-size: 16px;
+}
+
+.career-howdidwe-text{
+    margin: 3rem;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+.career-resume, .career-email{
+    font-size: 1.5rem;
+    margin-left:1rem;
+    text-align: left;
+}

@@ -6,12 +6,10 @@ import SiteNavbar from './components/header';
 import Footer from './components/footer';
 import HomePage from './pages/home/index';
 import AboutUs from './pages/about/index';
+// import About from './pages/home/about';
 import Career from './pages/career/index';
 import Completed from './pages/projects/Completed';
 import Contact from './pages/contact/index';
-// import Projects from './pages/home/projects';
-import Header from './components/header';
-// import ImgSlider from './components/img-slider';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -21,7 +19,6 @@ function App() {
     // </div>
     <div className="App">
       <SiteNavbar/>
-      <div>
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<HomePage/>}/>
@@ -29,10 +26,8 @@ function App() {
             <Route path='/career' element={<Career/>}/>
             <Route path='/completed' element={<Completed/>}/>
             <Route path='/contact' element={<Contact/>}/>
-            <Route path='/project' element={<Header/>}/>
           </Routes>
         </BrowserRouter>
-      </div>
       <Footer/>
     </div>
   );

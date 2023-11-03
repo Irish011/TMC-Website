@@ -1,71 +1,44 @@
-import React, { Suspense, useRef, useEffect, useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../styles/css/global.css';
-import '../../App.css';
+import React from "react";
 import ImgSlider from "../../components/img-slider";
-const About = React.lazy(() => import("./about"));
-const Projects = React.lazy(() => import("./projects"));
+import loadable from '@loadable/component';
+// import UseIntersection from './UseIntersection';
+// import Fade from 'react-reveal/Fade'
+// import ReactVisibilitySensor from "react-visibility-sensor";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import '../../styles/css/global.css';
+// import '../../App.css';
+// import About from "./about";
+// import Projects from "./projects";
 
-function HomePage(){
-    const aboutRef = useRef(null);
-    const projectRef = useRef(null);
-    const [aboutVisible, setAboutVisible] = useState(false);
-    const [projectVisible, setProjectVisible] = useState(false);
+const About = loadable(() => import("./about"), {
+  fallback: 
+    <div style={{height: '100%'}}>Loading...</div>
+});
 
-    useEffect (() => {
-        const aboutObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if(entry.isIntersecting) {
-                    setAboutVisible(true);
-                }
-            });
-        });
+const Projects = loadable(() => import("./projects"), {
+  fallback: <div style={{height: '50%'}}>Loading...</div>
+});
 
-        const projectObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if(entry.isIntersecting) {
-                    setProjectVisible(true);
-                }
-            });
-        });
+function HomePage() {
+  // const aboutRef = useRef(null);
+  // const projectRef = useRef(null);
 
-        if(aboutRef.current){
-            aboutObserver.observe(aboutRef.current);
-        }
-        if(projectRef.current){
-            projectObserver.observe(projectRef.current);
-        }
+  // const aboutVisible = UseIntersection(aboutRef, {threshold: 0});
+  // const projectVisible = UseIntersection(projectRef, {threshold: 0});
 
-        return () => {
-            if(aboutRef.current){
-                aboutObserver.unobserve(aboutRef.current);
-            }
-
-            if(projectRef.current){
-                projectObserver.unobserve(projectRef.current);
-            }
-        };
-    }, []);
-
-    return(
-        <div>
-    
-            <div ref={aboutRef}>
-                {aboutVisible && (
-                    <Suspense fallback={<div>Loading...</div>}>
-                        <About/>
-                    </Suspense>
-                )}
-            </div>
-            <div ref={projectRef}>
-                {projectVisible && (
-                    <React.Suspense fallback={<div>Loading...</div>}>
-                        <Projects/>
-                    </React.Suspense>
-                )}
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <ImgSlider />
+      {/* <div className="aboutVisible" ref={aboutRef}>
+        {aboutVisible && <About/>}
+      </div>
+      <div className="projectVisible" ref={projectRef}>
+        {projectVisible && <Projects/>}
+      </div> */}
+      <About/>
+      <Projects/>
+    </div>
+  );
 }
 
 export default HomePage;
