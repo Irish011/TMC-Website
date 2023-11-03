@@ -19,7 +19,7 @@ function App() {
     // </div>
     <div className="App">
       <SiteNavbar/>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter>
           <Routes>
             <Route path='/' element={<HomePage/>}/>
             <Route path='/aboutUs' element={<AboutUs/>}/>
