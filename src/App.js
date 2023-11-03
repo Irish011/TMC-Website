@@ -10,7 +10,7 @@ import AboutUs from './pages/about/index';
 import Career from './pages/career/index';
 import Completed from './pages/projects/Completed';
 import Contact from './pages/contact/index';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
     // </div>
     <div className="App">
       <SiteNavbar/>
-        <HashRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route path='/' element={<HomePage/>}/>
             <Route path='/aboutUs' element={<AboutUs/>}/>
@@ -27,7 +27,7 @@ function App() {
             <Route path='/completed' element={<Completed/>}/>
             <Route path='/contact' element={<Contact/>}/>
           </Routes>
-        </HashRouter>
+        </BrowserRouter>
       <Footer/>
     </div>
   );
