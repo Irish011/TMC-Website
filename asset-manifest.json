@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TMC-Website/static/css/main.09296692.css",
-    "main.js": "/TMC-Website/static/js/main.a313746d.js",
+    "main.js": "/TMC-Website/static/js/main.ef38996a.js",
     "static/css/338.a1666730.chunk.css": "/TMC-Website/static/css/338.a1666730.chunk.css",
     "static/js/338.8d1b0217.chunk.js": "/TMC-Website/static/js/338.8d1b0217.chunk.js",
     "static/css/877.5af77ad3.chunk.css": "/TMC-Website/static/css/877.5af77ad3.chunk.css",
@@ -36,7 +36,7 @@
     "static/media/Gasket.ttf": "/TMC-Website/static/media/Gasket.b6d308efc17f84cbeed7.ttf",
     "index.html": "/TMC-Website/index.html",
     "main.09296692.css.map": "/TMC-Website/static/css/main.09296692.css.map",
-    "main.a313746d.js.map": "/TMC-Website/static/js/main.a313746d.js.map",
+    "main.ef38996a.js.map": "/TMC-Website/static/js/main.ef38996a.js.map",
     "338.a1666730.chunk.css.map": "/TMC-Website/static/css/338.a1666730.chunk.css.map",
     "338.8d1b0217.chunk.js.map": "/TMC-Website/static/js/338.8d1b0217.chunk.js.map",
     "877.5af77ad3.chunk.css.map": "/TMC-Website/static/css/877.5af77ad3.chunk.css.map",
@@ -45,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.09296692.css",
-    "static/js/main.a313746d.js"
+    "static/js/main.ef38996a.js"
   ]
 }
