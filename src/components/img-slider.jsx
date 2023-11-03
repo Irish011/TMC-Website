@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
 import { useMediaQuery } from "@react-hook/media-query";
-import Img1Slider from "../images/home-slider-1.jpg";
-import Img2Slider from "../images/home-slider-2.jpg";
-import Img3Slider from "../images/home-slider-3.jpg";
-import Img4Slider from "../images/home-slider-4.jpg";
+import Img1Slider from "../images/pics/home-slider-1.jpg";
+import Img2Slider from "../images/pics/home-slider-2.jpg";
+import Img3Slider from "../images/pics/home-slider-3.jpg";
+import Img4Slider from "../images/pics/home-slider-4.jpg";
 
 function ImgSlider() {
-  const matches = useMediaQuery("only screen and (max-width: 991px)");
+  const matches = useMediaQuery("only screen and (max-width: 992px)");
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
