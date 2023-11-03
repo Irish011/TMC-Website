@@ -64,6 +64,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.0.0"
-  },
-  "homepage" : "https://irish001.github.io/TMC-Website/"
+  }
 }
